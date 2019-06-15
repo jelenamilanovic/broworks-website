@@ -1,0 +1,31 @@
+@import './variables.scss';
+@import './buttons.scss';
+@import './font.scss';
+
+@import './components/header.scss';
+@import './components/intro.scss';
+@import './components/best_works.scss';
+@import './components/we.scss';
+@import './components/standout.scss';
+@import './components/people_say.scss';
+@import './components/form.scss';
+@import './components/footer.scss';
+
+@import './components/works.scss';
+@import './components/agency.scss';
+
+
+* {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}

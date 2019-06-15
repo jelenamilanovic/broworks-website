@@ -1,0 +1,68 @@
+#agency {
+  h1.title {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 2em 3.6em;
+  }
+
+  .content {
+    padding: 0 104px;
+
+    .introline {
+      font-size: 30px;
+      margin: 2em 0 3em;
+    }
+  }
+
+  .content-section {
+    font-size: 27px;
+    margin-bottom: 8em;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .content-section img,
+  .agency-information {
+    float: left;
+  }
+
+  .agency-information {
+    width: calc(100% - 900px);
+    padding: 4em 3em;
+
+    &.determination {
+      padding: 4em 0px;
+    }
+
+  }
+
+  .evaluation-process {
+    position: relative;
+  }
+
+  .evaluation-process img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ep-text {
+    color: #fff;
+    z-index: 2000;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 68%;
+  }
+
+  .agency-information h3 {
+    font-size: 80px;
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 1em;
+  }
+}

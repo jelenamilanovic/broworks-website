@@ -1,0 +1,53 @@
+#lets-work-together {
+  padding: 150px 200px;
+
+  h1.title {
+    font-size: 5em;
+    font-weight: 800;
+    margin-bottom: 2em;
+  }
+
+  form {
+    width: 100%;
+    margin: 6em 0;
+  }
+
+  .ctrl {
+    height: 3em;
+    margin: 3em 0;
+  }
+
+  input[type='text'] {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #b7b7b7;
+    font-size: 25px;
+    width: 100%;
+
+    &:focus {
+      border-bottom: 1px solid $blue;
+    }
+  }
+
+  .service-ctrl-title {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  .services {
+    width: 60%;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  ::placeholder {
+    color: #6b6b6b;
+    font-size: 25px;
+  }
+}

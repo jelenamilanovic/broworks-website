@@ -1,0 +1,40 @@
+#footer {
+  width: 100%;
+  height: 850px;
+  background: $black;
+  color: $white;
+  position: relative;
+
+  .footer-main {
+    padding: 100px 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    display: inline-block;
+    font-size: 23px;
+
+    li,
+    p {
+      line-height: 3;
+    }
+
+    li {
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+  }
+
+  .copyright {
+    position: absolute;
+    left: calc(25% + 10px);
+  }
+}

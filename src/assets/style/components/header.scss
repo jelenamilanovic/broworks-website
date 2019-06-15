@@ -1,0 +1,48 @@
+header {
+  height: 120px;
+
+  .logo {
+    position: relative;
+    top: -30px;
+    left: 100px;
+    height: 200px;
+  }
+
+  &>* {
+    float: left;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+
+  nav {
+    position: relative;
+    top: 48px;
+    left: 122px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  nav ul li h6 {
+    font-weight: 500;
+    font-size: 23px;
+  }
+
+  .btn {
+    float: right;
+    position: relative;
+    top: 30px;
+    right: 142px;
+    width: 243px;
+    height: 80px;
+  }
+}

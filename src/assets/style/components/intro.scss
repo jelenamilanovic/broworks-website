@@ -1,0 +1,42 @@
+.intro {
+  background: $yellow;
+  width: 100vw;
+  height: 100vh;
+
+  .title {
+    width: 1200px;
+    margin: auto;
+    margin-top: 3em;
+  }
+
+  .title h1 {
+    font-size: 7em;
+    font-weight: 800;
+  }
+
+  .title p {
+    width: 750px;
+    font-size: 23px;
+    margin-top: 2em;
+  }
+
+  .btns {
+    margin: 3.5em 0;
+  }
+
+  .social-networks {
+    margin: 1em 0;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      margin: 0 40px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
