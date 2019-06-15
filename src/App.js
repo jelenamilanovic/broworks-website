@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './assets/style/index.scss';
+import Home from './pages/Home.jsx';
 import Works from './pages/Works.jsx';
 import Agency from './pages/Agency.jsx';
 
@@ -28,7 +29,7 @@ export default class App extends Component {
           <WhatPeopleSay />
           <LetsWorkTogether />
           <Footer /> */}
-
+          <Route exact path="/" component={Home} />
           <Route path="/works" component={Works} />
           <Route path="/agency" component={Agency} />
         </div>

@@ -9,7 +9,6 @@ import behance from '../assets/icons/behance.svg';
 export default function Intro() {
   return (
     <div className="intro">
-      <Header />
 
       <div className="title">
         <h1 className="extra-bold">We create <br /> unique projects <br /> that stand out</h1>
@@ -26,17 +25,29 @@ user-centered websites & apps, and digital marketing with the researched market 
 
 
       <ul className="social-networks">
+
         <li>
-          <img src={twitter} alt="Twitter" />
+          <a href="https://twitter.com/Broworks1" target="_blank">
+            <img src={twitter} alt="Twitter" />
+          </a>
         </li>
+
         <li>
-          <img src={behance} alt="Behance Network" />
+          <a href="https://www.behance.net/BroworksStudio" target="_blank">
+            <img src={behance} alt="Behance Network" />
+          </a>
         </li>
+
         <li>
-          <img src={instagram} alt="Instagram" />
+          <a href="https://www.instagram.com/broworksdesign/" target="_blank">
+            <img src={instagram} alt="Instagram" />
+          </a>
         </li>
+
         <li>
-          <img src={facebook} alt="Facebook" />
+          <a href="https://www.facebook.com/broworksdesign/" target="_blank">
+            <img src={facebook} alt="Facebook" />
+          </a>
         </li>
       </ul>
     </div>

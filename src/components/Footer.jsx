@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logo from '../assets/images/broworks ikonica.svg';
 
 export default function Footer() {
@@ -11,11 +12,26 @@ export default function Footer() {
 
         <div className="column">
           <ul>
-            <li>Works</li>
-            <li>Agency</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <li>Testimonials</li>
+
+            <Link to="/works">
+              <li>Works</li>
+            </Link>
+
+            <Link to="/agency">
+              <li>Agency</li>
+            </Link>
+
+            <Link to="/blog">
+              <li>Blog</li>
+            </Link>
+
+            <a href="#lets-work-together">
+              <li>Contact</li>
+            </a>
+
+            <Link to="/">
+              <li>Testimonials</li>
+            </Link>
           </ul>
         </div>
 
@@ -33,12 +49,29 @@ export default function Footer() {
 
         <div className="column">
           <ul>
-            <li>Behance</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-            <li>Twitter</li>
-            <li>Medium</li>
+            <a href="https://www.behance.net/BroworksStudio" target="_blank">
+              <li>Behance</li>
+            </a>
+
+            <a href="https://www.facebook.com/broworksdesign/" target="_blank">
+              <li>Facebook</li>
+            </a>
+
+            <a href="https://www.instagram.com/broworksdesign/" target="_blank">
+              <li>Instagram</li>
+            </a>
+
+            <a href="https://www.linkedin.com/company/broworks/" target="_blank">
+              <li>Linkedin</li>
+            </a>
+
+            <a href="https://twitter.com/Broworks1" target="_blank">
+              <li>Twitter</li>
+            </a>
+
+            <a href="https://medium.com/@office_86095" target="_blank">
+              <li>Medium</li>
+            </a>
           </ul>
         </div>
       </div>
