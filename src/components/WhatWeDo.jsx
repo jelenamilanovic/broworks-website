@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import devices from '../assets/images/devices.png';
 
 export default function WhatWeDo(props) {
+  let spheres = ['Design & Development', 'Logo & Branding', 'Digital Marketing'];
+  let [activeSphere, setActiveSphere] = useState(0);
+
   return (
     <div id="what-we-do">
       <div className="left">
@@ -12,16 +15,15 @@ export default function WhatWeDo(props) {
         <h1>What we do</h1>
 
         <ul className="list">
-          <li className="yellow">
-            <h3>Design & Development</h3>
-          </li>
+          {spheres.map((sphere, i) => {
+            let sphereClass = i === activeSphere ? 'yellow' : '';
 
-          <li>
-            <h3>Logo & Branding</h3>
-          </li>
-          <li>
-            <h3>Digital Marketing</h3>
-          </li>
+            return (
+              <li key={i} className={sphereClass}>
+                <h3 onMouseOver={() => setActiveSphere(i)}>{sphere}</h3>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>

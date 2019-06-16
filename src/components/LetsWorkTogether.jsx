@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function LetsWorkTogether() {
   let services = [
@@ -9,6 +9,8 @@ export default function LetsWorkTogether() {
     "Digital Marketing"
   ]
 
+  let [activeService, setService] = useState(0);
+
 
   return (
     <div id="lets-work-together">
@@ -18,7 +20,12 @@ export default function LetsWorkTogether() {
         <div className="service-ctrl-title">Choose a service</div>
 
         <div className="services">
-          {services.map(service => <h4> {service} </h4>)}
+          {services.map((service, i) => {
+            let sClass = i === activeService ? 'yellow' : '';
+            return (
+              <h4 className={sClass} onClick={() => setService(i)} key={i}> {service} </h4>
+            )
+          })}
         </div>
       </div>
       <form>

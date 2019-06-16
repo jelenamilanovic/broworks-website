@@ -1,9 +1,11 @@
 #best-works {
   width: 1720px;
-  margin: 150px auto;
+  margin: 200px auto;
 
   h1 {
-    font-size: 6em;
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: 2em;
   }
 
   .work {
@@ -14,5 +16,33 @@
       font-weight: normal;
       margin-bottom: 12px;
     }
+  }
+
+  li {
+    position: relative;
+  }
+
+  .w-card {
+    position: absolute;
+    right: -40px;
+    top: 110px;
+    background: #fff;
+    padding: 20px;
+    font-size: 23px;
+  }
+
+  .w-card:after {
+    background: transparent;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    right: 0;
+    top: 100%;
+    content: '';
+    border-top: 10px solid #acacac;
+    border-left: 20px solid #acacac;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid transparent;
+    overflow: hidden;
   }
 }

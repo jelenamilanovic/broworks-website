@@ -10,14 +10,14 @@
   }
 
   .footer-main {
-    padding: 100px 140px;
+    padding: 100px 70px;
     display: flex;
-    justify-content: space-between;
   }
 
   .column {
     display: inline-block;
     font-size: 23px;
+    margin: 40px 180px;
 
     li,
     p {
@@ -39,6 +39,13 @@
 
   .copyright {
     position: absolute;
-    left: calc(25% + 10px);
+    left: 320px;
+  }
+
+  #white-logo {
+    width: 83px;
+    position: relative;
+    top: -155px;
+    left: 130px;
   }
 }

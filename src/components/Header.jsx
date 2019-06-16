@@ -1,46 +1,57 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../assets/images/logo-horizontal.svg';
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-export default function Header() {
+function Header(props) {
+  let hClass = props.location.pathname === '/' ? 'yellow' : '';
+  let navigation = [
+    { title: 'Works', isHref: false, path: '/works' },
+    { title: 'Agency', isHref: false, path: '/agency' },
+    { title: 'Contact', isHref: true, path: '#lets-work-together' },
+    { title: 'Blog', isHref: false, path: '/blog' }
+  ];
+
+  let activeRoute = props.location.pathname;
+
   return (
-    <header>
+    <header className={hClass}>
 
-      <Link to='/'>
+      <Link to='/' >
         <img src={logo} alt="Broworks-logo" className="logo" />
       </Link>
 
       <nav>
         <ul>
-          <li>
-            <Link to='/works'>
-              <h6>Works</h6>
-            </Link>
-          </li>
-
-          <li>
-            <Link to='/agency'>
-              <h6>Agency</h6>
-            </Link>
-          </li>
-
-          <li>
-            <a href='#lets-work-together'>
-              <h6>Contact</h6>
-            </a>
-          </li>
-
-          <li>
-            <Link to='/blog'>
-              <h6>Blog</h6>
-            </Link>
-          </li>
+          {
+            navigation.map((route, i) => {
+              let rClass = route.path == activeRoute ? 'active' : '';
+              console.log(route.path, activeRoute)
+              if (route.isHref)
+                return (
+                  <li key={i} className={rClass} >
+                    <a href={route.path}>
+                      <h6>{route.title}</h6>
+                    </a>
+                  </li>
+                )
+              else
+                return (
+                  <li key={i} className={rClass} >
+                    <Link to={route.path}>
+                      <h6>{route.title}</h6>
+                    </Link>
+                  </li>
+                )
+            })
+          }
         </ul>
       </nav>
 
-      <button className="btn btn-blue">HIRE US</button>
-
+      <a href='#lets-work-together' className='hire-us'>
+        <button className="btn btn-blue">HIRE US</button>
+      </a>
 
     </header>
   );
 }
+export default withRouter(Header)

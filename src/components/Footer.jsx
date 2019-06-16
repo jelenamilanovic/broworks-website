@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import logo from '../assets/images/broworks ikonica.svg';
+import logo from '../assets/icons/Broworks white logo.svg';
 
 export default function Footer() {
   return (
     <div id="footer">
       <div className="footer-main">
-        <div className="column">
-          <img src={logo} alt="Broworks" />
-        </div>
+
+        <img src={logo} alt="Broworks" id="white-logo" />
+
 
         <div className="column">
           <ul>

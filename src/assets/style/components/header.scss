@@ -1,6 +1,10 @@
 header {
   height: 120px;
 
+  &.yellow {
+    background: $yellow;
+  }
+
   .logo {
     position: relative;
     top: -30px;
@@ -30,6 +34,13 @@ header {
     font-size: 23px;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
+    top: -40px;
+    padding-top: 40px;
+
+    &.active {
+      border-top: 3px solid $black;
+    }
   }
 
   nav ul li h6 {
@@ -37,12 +48,16 @@ header {
     font-size: 23px;
   }
 
-  .btn {
+  .hire-us {
     float: right;
     position: relative;
     top: 30px;
-    right: 142px;
+    right: 50px;
     width: 243px;
     height: 80px;
+
+    &:hover>* {
+      opacity: 1;
+    }
   }
 }

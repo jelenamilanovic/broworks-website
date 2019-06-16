@@ -1,5 +1,5 @@
-import React from 'react'
-import Header from './Header.jsx';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import twitter from '../assets/icons/twitter.svg';
 import facebook from '../assets/icons/facebook.svg';
@@ -16,8 +16,14 @@ export default function Intro() {
 user-centered websites & apps, and digital marketing with the researched market and target audience.</p>
 
         <div className="btns">
-          <button className="btn btn-blue">Our work</button>
-          <button className="btn btn-transparent">Free consultancy &#8594;</button>
+          <Link to="/works">
+            <button className="btn btn-blue">Our work</button>
+          </Link>
+
+          <a href="#lets-work-together">
+            <button className="btn btn-transparent">Free consultancy &#8594;</button>
+          </a>
+
         </div>
 
       </div>

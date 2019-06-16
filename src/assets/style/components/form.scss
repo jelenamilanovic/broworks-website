@@ -1,8 +1,8 @@
 #lets-work-together {
-  padding: 150px 200px;
+  padding: 130px 200px;
 
   h1.title {
-    font-size: 5em;
+    font-size: 100px;
     font-weight: 800;
     margin-bottom: 2em;
   }
@@ -31,18 +31,28 @@
 
   .service-ctrl-title {
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 27px;
+    color: #6b6b6b;
   }
 
   .services {
-    width: 60%;
+    width: 80%;
     display: grid;
+    margin: 2em 0 3em;
+    margin-left: -2.5em;
     grid-row-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
 
     h4 {
-      font-size: 20px;
+      font-size: 27px;
       font-weight: 500;
+      padding: 20px;
+      padding-left: 40px;
+      cursor: pointer;
+    }
+
+    h4.yellow {
+      background: $yellow;
     }
   }
 

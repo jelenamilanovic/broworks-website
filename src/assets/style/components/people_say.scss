@@ -1,11 +1,11 @@
 #what-people-say {
   background: #f2f2f2;
-  padding: 5em 450px;
+  padding: 7em 450px;
   height: 1020px;
 
   .title {
-    font-size: 5em;
-    margin-bottom: 1em;
+    font-size: 100px;
+    margin-bottom: 2em;
   }
 
   .box {
@@ -35,32 +35,6 @@
       text-transform: uppercase;
       font-weight: bold;
       text-size: 18px;
-    }
-  }
-
-  .arrows {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    margin-top: 150px;
-  }
-
-  .arrow {
-    margin: 0 10px;
-    background: $white;
-    width: 58px;
-    height: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 1s;
-
-    &:hover {
-      background: $yellow;
-      width: 80px;
-      height: 80px;
     }
   }
 }

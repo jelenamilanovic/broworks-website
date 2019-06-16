@@ -18,11 +18,6 @@ export default function WhatPeopleSay(props) {
           <p className="from"> Dimitrije Salon </p>
         </div>
       </div>
-
-      <div className="arrows">
-        <div className="arrow"><span>&#8592;</span></div>
-        <div className="arrow"><span>&#8594;</span></div>
-      </div>
     </div>
   );
 }
