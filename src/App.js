@@ -5,13 +5,12 @@ import './assets/style/index.scss';
 import Home from './pages/Home.jsx';
 import Works from './pages/Works.jsx';
 import Agency from './pages/Agency.jsx';
+import ConceptStudio from './pages/ConceptStudio.jsx';
+import PomocSrpskojDeci from './pages/PomocSrpskojDeci.jsx';
+import Sana from './pages/Sana.jsx';
+import DimitrijeSalon from './pages/DimitrijeSalon.jsx';
 
 import Header from './components/Header.jsx';
-import Intro from './components/Intro.jsx';
-import BestWork from './components/BestWorks.jsx';
-import WhatWeDo from './components/WhatWeDo.jsx';
-import StandOut from './components/StandOut.jsx';
-import WhatPeopleSay from './components/WhatPeopleSay.jsx';
 import LetsWorkTogether from './components/LetsWorkTogether.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -21,16 +20,14 @@ export default class App extends Component {
       <Router>
         <div className="app">
           <Header />
-
-          {/* <Intro />
-          <BestWork />
-          <WhatWeDo />
-          <StandOut />
-          <WhatPeopleSay />
-          <LetsWorkTogether />
-          <Footer /> */}
           <Route exact path="/" component={Home} />
-          <Route path="/works" component={Works} />
+
+          <Route exact path="/works" component={Works} />
+          <Route path="/works/concept-studio" component={ConceptStudio} />
+          <Route path="/works/pomoc-srpskoj-deci" component={PomocSrpskojDeci} />
+          <Route path="/works/sana" component={Sana} />
+          <Route path="/works/dimitrije-salon" component={DimitrijeSalon} />
+
           <Route path="/agency" component={Agency} />
         </div>
         <LetsWorkTogether />

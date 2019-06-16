@@ -1,0 +1,42 @@
+#single-work {
+
+  .title {
+    padding-left: 345px;
+    margin: 6em 0;
+  }
+
+  .title h1 {
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: .5em;
+  }
+
+  .subtitle {
+    font-size: 27px;
+  }
+
+  .condensed {
+    width: 1312px;
+    margin: 5em auto 4em;
+    padding: 5em 0;
+
+    section {
+      margin-bottom: 220px;
+    }
+
+    h3 {
+      font-size: 48px;
+      margin-bottom: 1.5em;
+    }
+
+    p {
+      font-size: 27px;
+      margin-bottom: 1.5em;
+    }
+
+    h3,
+    p {
+      font-weight: normal;
+    }
+  }
+}
