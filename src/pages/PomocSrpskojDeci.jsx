@@ -1,16 +1,21 @@
 import React from 'react';
+import NextPage from '../components/NewPage.jsx';
 import img1 from '../assets/images/Pomoc Srpskoj Deci/Pomoc Srpskoj Deci_img 1.png';
 import img2 from '../assets/images/Pomoc Srpskoj Deci/Pomoc Srpskoj Deci_img 2.png';
 import img3 from '../assets/images/Pomoc Srpskoj Deci/Pomoc Srpskoj Deci_img 3.png';
 import img4 from '../assets/images/Pomoc Srpskoj Deci/Pomoc Srpskoj Deci_img 4.png';
 import img5 from '../assets/images/Pomoc Srpskoj Deci/Pomoc Srpskoj Deci_img 5.png';
 
-// import img2 from '../assets/images/ConceptStudio/img 2.png';
-// import img3 from '../assets/images/ConceptStudio/img 3.png';
-// import img4 from '../assets/images/ConceptStudio/img 4.png';
+import conceptStudioPreview from '../assets/images/ConceptStudio/Concept Studio Preview img.png';
 
 
 export default function PomocSrpskojDeci(props) {
+  let nextPage = {
+    name: 'Concept Studio',
+    work: 'Website & Brand Identity',
+    preview: conceptStudioPreview,
+    link: '/works/concept-studio'
+  }
   return (
     <div id="single-work">
       <div className="title">
@@ -70,6 +75,8 @@ material and basic stuff that every kid needs, as much as anyone can share.</p>
       <div className="wide">
         <img src={img5} alt="Pomoc Srpskoj Deci" />
       </div>
+
+      <NextPage nextPage={nextPage} />
     </div>
   )
 }

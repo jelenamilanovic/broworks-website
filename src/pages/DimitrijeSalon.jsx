@@ -1,4 +1,6 @@
 import React from 'react'
+import NewPage from '../components/NewPage.jsx';
+
 import img1 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 1.png';
 import img2 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 2.png';
 import img3 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 3.png';
@@ -10,9 +12,16 @@ import img8 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 8.png';
 import img9 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 9.png';
 import img10 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 10.png';
 import img11 from '../assets/images/Dimitrije Salon/Dimitrije Salon_img 11.png';
-
+import sanaPreview from '../assets/images/Sana/Sana Preview img.png';
 
 export default function DimitrijeSalon(props) {
+  let nextPage = {
+    name: 'Sana',
+    work: 'Brand identity design',
+    preview: sanaPreview,
+    link: '/works/sana'
+  }
+
   return (
     <div id="single-work">
       <div className="title">
@@ -102,6 +111,8 @@ primary colors, since that will be his salon interior design colors as well.</p>
       </div><div className="wide margin-min">
         <img src={img11} alt="Dimitrije Salon" />
       </div>
+
+      <NewPage nextPage={nextPage} />
     </div>
   )
 }

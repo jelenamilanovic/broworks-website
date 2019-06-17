@@ -1,4 +1,5 @@
 import React from 'react';
+import NextPage from '../components/NewPage.jsx';
 import img1 from '../assets/images/Sana/Sana_img 1.png';
 import img2 from '../assets/images/Sana/Sana_img 2.png';
 import img3 from '../assets/images/Sana/Sana_img 3.png';
@@ -6,8 +7,15 @@ import img4 from '../assets/images/Sana/Sana_img 4.png';
 import img5 from '../assets/images/Sana/Sana_img 5.png';
 import img6 from '../assets/images/Sana/Sana_img 6.png';
 
+import pomocPreview from '../assets/images/Pomoc Srpskoj Deci/Pomoc Srpskoj Deci Preview img.png';
 
 export default function Sana(props) {
+  let nextPage = {
+    name: 'Pomoc Srpskoj deci',
+    work: 'Brand identity design',
+    preview: pomocPreview,
+    link: '/works/pomoc-srpskoj-deci'
+  }
   return (
     <div id="single-work">
       <div className="title">
@@ -86,6 +94,8 @@ secondary and aqua blue for tertial color. Purple will make her royalty among th
       <div className="wide">
         <img src={img6} alt="Sana" />
       </div>
+
+      <NextPage nextPage={nextPage} />
     </div>
   )
 }

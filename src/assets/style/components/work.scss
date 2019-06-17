@@ -39,4 +39,34 @@
       font-weight: normal;
     }
   }
+
+  #next-page {
+    background: $black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+    padding-left: 160px;
+    margin: 0 0;
+
+    h1.np-title {
+      font-size: 100px;
+      font-weight: 800;
+      margin-top: -50px;
+      margin-bottom: 80px;
+    }
+
+    h3.np-subtitle {
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 27px;
+      margin-bottom: 40%;
+    }
+  }
+
+
 }
