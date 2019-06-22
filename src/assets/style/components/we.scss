@@ -13,6 +13,10 @@
     clear: both;
   }
 
+  .left {
+    width: 1000px;
+  }
+
   h1 {
     font-weight: 800;
     font-size: 5em;
@@ -47,4 +51,39 @@
     background: $yellow;
     margin-bottom: 80px;
   }
+
+  .mobile-visible {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 510px) {
+
+  #what-we-do {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+
+    .mobile-visible {
+      display: block;
+
+      img {
+        width: 100vw;
+      }
+
+      h1 {
+        font-size: $h1-mobile;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: $h3-mobile;
+      }
+    }
+
+    .mobile-hidden {
+      display: none;
+    }
+  }
+
 }

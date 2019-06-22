@@ -21,7 +21,7 @@ function Header(props) {
         <img src={logo} alt="Broworks-logo" className="logo" />
       </Link>
 
-      <nav>
+      <nav className="mobile-hidden">
         <ul>
           {
             navigation.map((route, i) => {
@@ -48,7 +48,7 @@ function Header(props) {
         </ul>
       </nav>
 
-      <a href='#lets-work-together' className='hire-us' onClick={props.redirect}>
+      <a href='#lets-work-together' className='hire-us mobile-hidden' onClick={props.redirect} >
         <button className="btn btn-blue">HIRE US</button>
       </a>
 

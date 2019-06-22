@@ -46,7 +46,30 @@ persona to help us figure out what kind of logo we should build.</p>
 
       </div>
 
-      <div className="wide">
+      <div className="wide with-keywords">
+        <div className="keywords">
+          <h3>Keywords</h3>
+          <ul className="keywords-list">
+            <li className="keyword">
+              <span>Star</span>
+            </li>
+            <li className="keyword">
+              <span>Luxury</span>
+            </li>
+            <li className="keyword">
+              <span>Sharp</span>
+            </li>
+            <li className="keyword">
+              <span>Shape</span>
+            </li>
+            <li className="keyword">
+              <span>Flexible</span>
+            </li>
+            <li className="keyword">
+              <span>Pattern</span>
+            </li>
+          </ul>
+        </div>
         <img src={img2} alt="Dimitrije Salon" />
       </div>
       <div className="condensed">

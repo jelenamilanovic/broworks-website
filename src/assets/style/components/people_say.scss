@@ -11,7 +11,7 @@
   .box {
     padding: 5em;
     width: 900px;
-    height: 400px;
+    height: 420px;
     position: relative;
     background: #fff;
 
@@ -44,7 +44,7 @@
   }
 }
 
-@media screen and(max-width: 490px) {
+@media screen and(max-width: 510px) {
   #what-people-say {
     padding: 7em 20px;
     height: 100vh;
@@ -60,6 +60,10 @@
 
     .box img {
       height: 100px;
+    }
+
+    .box .text .who {
+      margin-top: 54px;
     }
   }
 }

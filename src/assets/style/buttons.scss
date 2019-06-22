@@ -3,8 +3,8 @@
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  padding: 27px 67px;
-  min-width: 262px;
+
+  min-width: 245px;
   height: 80px;
   outline: none;
   cursor: pointer;
@@ -12,6 +12,7 @@
 
 .btn-transparent {
   color: $black;
+  padding: 27px 67px;
   background: transparent;
 
   &:hover {
@@ -54,9 +55,9 @@
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 510px) {
   .btn {
     font-size: $btn-mobile;
-    padding: 20px 130px
+    min-width: calc(100% - 3em);
   }
 }

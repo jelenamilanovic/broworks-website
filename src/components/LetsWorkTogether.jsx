@@ -41,7 +41,7 @@ export default function LetsWorkTogether() {
           <input type="text" placeholder="Project details*" />
         </div>
 
-        <button className="ctrl btn btn-yellow">Send</button>
+        <button className="btn btn-yellow">Send</button>
       </form>
 
     </div>

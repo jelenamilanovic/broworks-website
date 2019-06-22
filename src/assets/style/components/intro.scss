@@ -40,3 +40,34 @@
     }
   }
 }
+
+@media screen and (max-width: 510px) {
+
+  .intro {
+    padding: 20px 1.5em;
+    height: auto;
+
+    .title {
+      width: auto;
+    }
+
+    .title h1 {
+      font-size: $h1-mobile;
+    }
+
+    .title p {
+      width: auto;
+      font-size: $medium-mobile;
+      margin-top: 2em;
+    }
+
+    .btns {
+      text-align: center;
+    }
+
+    .social-networks {
+      display: none;
+    }
+  }
+
+}

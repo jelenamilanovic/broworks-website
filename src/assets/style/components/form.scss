@@ -62,3 +62,30 @@
     font-size: 25px;
   }
 }
+
+@media screen and (max-width: 510px) {
+
+  #lets-work-together {
+    padding: 130px 1.5em;
+
+    h1.title {
+      font-size: $h1-mobile;
+      text-align: center;
+    }
+
+    .services {
+      width: 100%;
+      display: grid;
+      margin: 2em 0 0;
+      margin-left: 0;
+      grid-row-gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn {
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+}
