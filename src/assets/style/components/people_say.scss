@@ -17,9 +17,14 @@
 
     img {
       position: absolute;
-      right: 5px;
-      bottom: 0;
-      height: 280px;
+      right: 75px;
+      bottom: 38px;
+      height: 238px;
+    }
+
+    .text {
+      z-index: 2;
+      position: relative;
     }
 
     .text p {
@@ -34,7 +39,27 @@
     .text .from {
       text-transform: uppercase;
       font-weight: bold;
-      text-size: 18px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and(max-width: 490px) {
+  #what-people-say {
+    padding: 7em 20px;
+    height: 100vh;
+
+    .title {
+      font-size: $h1-mobile;
+    }
+
+    .box {
+      padding: 2em;
+      width: calc(100% - 40px);
+    }
+
+    .box img {
+      height: 100px;
     }
   }
 }

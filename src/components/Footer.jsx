@@ -7,8 +7,9 @@ export default function Footer() {
     <div id="footer">
       <div className="footer-main">
 
-        <img src={logo} alt="Broworks" id="white-logo" />
-
+        <Link to="/" id="white-logo">
+          <img src={logo} alt="Broworks" />
+        </Link>
 
         <div className="column">
           <ul>

@@ -1,3 +1,9 @@
+#home #best-works h1 {
+  margin-bottom: 1.7em;
+  padding-left: 0px;
+  padding-top: 1em;
+}
+
 #best-works {
   width: 1720px;
   margin: 200px auto;
@@ -6,6 +12,7 @@
     font-size: 100px;
     font-weight: 800;
     margin-bottom: 2em;
+    padding-left: 265px;
   }
 
   .work {
@@ -44,5 +51,52 @@
     border-bottom: 10px solid transparent;
     border-right: 20px solid transparent;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #best-works {
+    width: 100vw;
+
+    h1 {
+      font-size: $h1-mobile;
+      text-align: center
+    }
+
+    .works {
+      padding: 0 25px;
+    }
+
+    .work {
+      margin: 80px 0;
+    }
+
+    .work h3 {
+      font-size: $h3-mobile;
+      margin-bottom: 8px;
+    }
+
+    .work img {
+      width: calc(100% - 50px);
+    }
+
+    .w-card {
+      position: absolute;
+      right: 24px;
+      top: 45px;
+      background: #fff;
+      padding: 6px;
+      font-size: 12px;
+      z-index: 2;
+    }
+
+    .w-card::after {
+      border-top: 7px solid #acacac;
+      border-left: 14px solid #acacac;
+      border-bottom: 7px solid transparent;
+      border-right: 14px solid transparent;
+      z-index: 1;
+    }
+
   }
 }

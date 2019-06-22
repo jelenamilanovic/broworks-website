@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import twitter from '../assets/icons/twitter.svg';
 import facebook from '../assets/icons/facebook.svg';
 import instagram from '../assets/icons/instagram.svg';
 import behance from '../assets/icons/behance.svg';
+import withRedirection from './withRedirection.jsx';
 
-export default function Intro() {
+function Intro({ redirect }) {
+
   return (
     <div className="intro">
 
@@ -20,7 +21,7 @@ user-centered websites & apps, and digital marketing with the researched market 
             <button className="btn btn-blue">Our work</button>
           </Link>
 
-          <a href="#lets-work-together">
+          <a href="#" onClick={redirect}>
             <button className="btn btn-transparent">Free consultancy &#8594;</button>
           </a>
 
@@ -59,3 +60,5 @@ user-centered websites & apps, and digital marketing with the researched market 
     </div>
   );
 }
+
+export default withRedirection(Intro, 'lets-work-together');

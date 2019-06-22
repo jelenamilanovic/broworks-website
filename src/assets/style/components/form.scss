@@ -13,8 +13,8 @@
   }
 
   .ctrl {
-    height: 3em;
-    margin: 3em 0;
+    height: 4em;
+    margin: 6em 0;
   }
 
   input[type='text'] {
@@ -23,6 +23,7 @@
     border-bottom: 1px solid #b7b7b7;
     font-size: 25px;
     width: 100%;
+    padding-bottom: 10px;
 
     &:focus {
       border-bottom: 1px solid $blue;

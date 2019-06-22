@@ -3,6 +3,7 @@ import agency from '../assets/images/agency.png';
 import efficiency from '../assets/images/efficiency.png';
 import determination from '../assets/images/determination.png';
 import evaluation from '../assets/images/evaluation.png';
+import { Link } from "react-router-dom";
 
 export default function Agency(props) {
   return (
@@ -29,7 +30,9 @@ export default function Agency(props) {
           <div className="agency-information">
             <h3>Determination is the key</h3>
             <p>We search market, users, and competitors to create a unique and best possible solution. The process of reaching the right audience is slower, but have a better impact on your business. Contact us if you have any questions for us and we will be happy to help.</p>
-            <button className="btn btn-yellow">Our work</button>
+            <Link to="/works">
+              <button className="btn btn-yellow">Our work</button>
+            </Link>
           </div>
           <img src={determination} alt="Determination" />
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import logo from '../assets/images/logo-horizontal.svg';
 import { Link, withRouter } from "react-router-dom";
+import withRedirection from './withRedirection';
 
 function Header(props) {
   let hClass = props.location.pathname === '/' ? 'yellow' : '';
@@ -29,7 +30,7 @@ function Header(props) {
               if (route.isHref)
                 return (
                   <li key={i} className={rClass} >
-                    <a href={route.path}>
+                    <a href={route.path} onClick={props.redirect}>
                       <h6>{route.title}</h6>
                     </a>
                   </li>
@@ -47,11 +48,11 @@ function Header(props) {
         </ul>
       </nav>
 
-      <a href='#lets-work-together' className='hire-us'>
+      <a href='#lets-work-together' className='hire-us' onClick={props.redirect}>
         <button className="btn btn-blue">HIRE US</button>
       </a>
 
     </header>
   );
 }
-export default withRouter(Header)
+export default withRouter(withRedirection(Header, 'lets-work-together'));

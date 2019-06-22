@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop.jsx';
 import './assets/style/index.scss';
 import Home from './pages/Home.jsx';
 import Works from './pages/Works.jsx';
@@ -14,14 +14,26 @@ import Header from './components/Header.jsx';
 import LetsWorkTogether from './components/LetsWorkTogether.jsx';
 import Footer from './components/Footer.jsx';
 
+import uc from './assets/images/uc.jpg'
+
 export default class App extends Component {
+  state = {
+    clicks: 0
+  }
+
+  incrementClicks = () => {
+    let clicks = this.state.clicks + 1;
+    this.setState({ clicks });
+  }
+
   render() {
 
-    return (
-      <Router>
-        <div className="app">
-          <Header />
-          <Route exact path="/" component={Home} />
+    let mainView = (
+      <>
+        <Header />
+        <ScrollToTop />
+        <Switch>
+          <Route exact path={["/", "/home"]} component={Home} />
 
           <Route exact path="/works" component={Works} />
           <Route path="/works/concept-studio" component={ConceptStudio} />
@@ -30,9 +42,29 @@ export default class App extends Component {
           <Route path="/works/dimitrije-salon" component={DimitrijeSalon} />
 
           <Route path="/agency" component={Agency} />
-        </div>
+        </Switch>
+      </>
+    )
+
+    let foot = (
+      <>
         <LetsWorkTogether />
         <Footer />
+      </>
+    )
+
+    return (
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
+
+        <div className="app" onClick={this.incrementClicks}>
+          {
+            this.state.clicks > 10 ? mainView : mainView
+          }
+        </div>
+        {
+          this.state.clicks > 10 ? foot : foot
+        }
+
       </Router>
 
     )
