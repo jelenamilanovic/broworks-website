@@ -13,7 +13,7 @@ export default function BestWork(props) {
 
       <ul className="works">
         <Link to="works/dimitrije-salon">
-          <li className="work">
+          <li className="work wow slideInLeft">
             <h3>Dimitrije Salon</h3>
             <img src={dimitrije} alt="Dimitrije Salon" />
             <div className="w-card">
@@ -23,7 +23,7 @@ export default function BestWork(props) {
         </Link>
 
         <Link to="works/pomoc-srpskoj-deci">
-          <li className="work">
+          <li className="work wow slideInRight">
             <h3>Pomoc Srpskoj Deci</h3>
             <img src={pomoc} alt="Pomoc Srpskoj Deci" />
             <div className="w-card">
@@ -33,7 +33,7 @@ export default function BestWork(props) {
         </Link>
 
         <Link to="works/sana">
-          <li className="work">
+          <li className="work wow slideInLeft">
             <h3>Sana</h3>
             <img src={sana} alt="Sana" />
             <div className="w-card">
@@ -43,7 +43,7 @@ export default function BestWork(props) {
         </Link>
 
         <Link to="works/concept-studio">
-          <li className="work fullopacity">
+          <li className="work wow slideInRight fullopacity">
             <h3>Concept Studio</h3>
             <img src={concept} alt="Concept Studio" />
             <div className="w-card">

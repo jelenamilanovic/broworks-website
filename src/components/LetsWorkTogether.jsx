@@ -19,7 +19,7 @@ export default function LetsWorkTogether() {
       <div className="service-ctrl">
         <div className="service-ctrl-title">Choose a service</div>
 
-        <div className="services">
+        <div className="services wow fadeIn">
           {services.map((service, i) => {
             let sClass = i === activeService ? 'yellow' : '';
             return (
@@ -28,7 +28,7 @@ export default function LetsWorkTogether() {
           })}
         </div>
       </div>
-      <form>
+      <form className="wow fadeIn">
         <div className="ctrl">
           <input type="text" placeholder="Your name*" />
         </div>

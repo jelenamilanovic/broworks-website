@@ -44,3 +44,9 @@ header li h6:hover,
 p {
   line-height: 1.52;
 }
+
+#app,
+#root {
+  overflow-x: hidden;
+  width: 100vw;
+}

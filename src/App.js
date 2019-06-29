@@ -14,8 +14,8 @@ import Header from './components/Header.jsx';
 import LetsWorkTogether from './components/LetsWorkTogether.jsx';
 import Footer from './components/Footer.jsx';
 
-import uc from './assets/images/uc.jpg'
-
+import uc from './assets/images/uc.jpg';
+import WOW from "wow.js";
 export default class App extends Component {
   state = {
     clicks: 0
@@ -68,5 +68,9 @@ export default class App extends Component {
       </Router>
 
     )
+  }
+
+  componentDidMount() {
+    new WOW().init();
   }
 }

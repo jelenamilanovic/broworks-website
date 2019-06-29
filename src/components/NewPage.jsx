@@ -10,12 +10,12 @@ export default function NextPage({ nextPage }) {
         <h1 className="np-title">Next Project</h1>
         <h3 className="np-subtitle">{nextPage.name}</h3>
         <p>{nextPage.work}</p>
-        <Link to={nextPage.link}>
+        <Link to={nextPage.link} className="mobile-link">
           <button className="btn btn-yellow">See Project</button>
         </Link>
       </section>
 
-      <section>
+      <section className="mobile-img">
         <img src={nextPage.preview} alt={nextPage.name} />
       </section>
     </div>

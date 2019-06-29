@@ -1,11 +1,11 @@
 #what-people-say {
   background: #f2f2f2;
-  padding: 7em 450px;
-  height: 1020px;
+  padding: 10em 450px;
+  min-height: 1136px;
 
   .title {
     font-size: 100px;
-    margin-bottom: 2em;
+    margin-bottom: 1.8em;
   }
 
   .box {
@@ -28,7 +28,7 @@
     }
 
     .text p {
-      font-size: 23px;
+      font-size: 21px;
     }
 
     .text .who {

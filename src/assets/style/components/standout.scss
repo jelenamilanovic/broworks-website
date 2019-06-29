@@ -23,13 +23,17 @@
     width: 60%;
 
     h1 {
-      font-size: 98px;
+      font-size: 95px !important; // naslovi
+      font-weight: 800;
       margin-bottom: 80px;
+      line-height: 1;
     }
 
     p {
-      font-size: 23px;
-      margin-bottom: 80px;
+      font-size: 16px;
+      margin: auto;
+      margin-bottom: 130px;
+      width: 70%;
     }
   }
 }

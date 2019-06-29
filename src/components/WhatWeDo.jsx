@@ -9,7 +9,7 @@ export default function WhatWeDo(props) {
   let [activePhoto, setActivePhoto] = useState(0);
 
   return (
-    <div id="what-we-do">
+    <div id="what-we-do" className="wow slideInUp">
       <div className="mobile-hidden">
         <div className="left">
           <img src={spheres[activePhoto].photo} alt="What we do" />

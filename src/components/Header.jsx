@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/logo-horizontal.svg';
+import menu from '../assets/icons/menu.svg';
 import { Link, withRouter } from "react-router-dom";
 import withRedirection from './withRedirection';
+import MobileMenu from './MobileMenu.jsx';
 
 function Header(props) {
   let hClass = props.location.pathname === '/' ? 'yellow' : '';
@@ -13,6 +15,13 @@ function Header(props) {
   ];
 
   let activeRoute = props.location.pathname;
+  let [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  let toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
+  let menuStyle = isMenuOpen ? { display: 'block' } : { display: 'none' };
 
   return (
     <header className={hClass}>
@@ -20,6 +29,12 @@ function Header(props) {
       <Link to='/' >
         <img src={logo} alt="Broworks-logo" className="logo" />
       </Link>
+
+      <div id="menu-icon" onClick={toggleMenu}>
+        <img src={menu} alt="Menu" />
+      </div>
+
+      <MobileMenu />
 
       <nav className="mobile-hidden">
         <ul>

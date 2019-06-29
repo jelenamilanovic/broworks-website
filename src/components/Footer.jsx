@@ -5,13 +5,13 @@ import logo from '../assets/icons/Broworks white logo.svg';
 export default function Footer() {
   return (
     <div id="footer">
-      <div className="footer-main">
+      <div className="footer-main mobile-grid">
 
-        <Link to="/" id="white-logo">
+        <Link to="/" id="white-logo" className='mobile-row1'>
           <img src={logo} alt="Broworks" />
         </Link>
 
-        <div className="column">
+        <div className="column mobile-row2 mobile-col1">
           <ul>
 
             <Link to="/works">
@@ -36,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="column contact">
+        <div className="column contact mobile-row3">
           <div className="upper">
             <p>Broworks</p>
             <p>Pancevo, Serbia</p>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="column">
+        <div className="column mobile-row2 mobile-col2">
           <ul>
             <a href="https://www.behance.net/BroworksStudio" target="_blank">
               <li>Behance</li>

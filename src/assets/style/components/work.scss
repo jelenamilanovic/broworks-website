@@ -45,14 +45,14 @@
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 120px;
+    padding: 160px 120px;
     padding-left: 160px;
     margin: 0 0;
 
     h1.np-title {
       font-size: 100px;
       font-weight: 800;
-      margin-top: -50px;
+      margin-top: -18px;
       margin-bottom: 80px;
     }
 
@@ -64,7 +64,7 @@
     p {
       font-weight: normal;
       font-size: 27px;
-      margin-bottom: 40%;
+      margin-bottom: 33%;
     }
   }
 
@@ -98,4 +98,93 @@
     text-align: center;
     padding-top: 12px;
   }
+}
+
+@media screen and (max-width: 510px) {
+
+  #single-work {
+    .title {
+      padding-left: 25px;
+    }
+
+    h1.title {
+      font-size: 80px
+    }
+
+    .subtitle {
+      font-size: 23px;
+    }
+
+    .condensed {
+      width: 100%;
+      padding: 0 25px;
+    }
+
+    .condensed section,
+    .condensed .w-text {
+      margin-bottom: 90px;
+
+    }
+
+    .condensed h3 {
+      font-size: 42px;
+    }
+
+    .condensed p {
+      font-size: 20px;
+    }
+
+    .wide img {
+      width: 100%;
+    }
+
+    #next-page {
+      display: block;
+      position: relative;
+      height: 100vh;
+      padding: 2em 0;
+    }
+
+    #next-page section {
+      display: block;
+    }
+
+    #next-page h1.np-title {
+      font-size: 45px;
+      font-weight: 800;
+      margin: 0;
+      padding: 0 25px;
+    }
+
+    #next-page h3.np-subtitle {
+      font-size: 23px;
+      margin: 5px 0;
+      padding: 0 25px;
+    }
+
+    #next-page p {
+      font-size: 18px;
+      margin: 10px 0;
+      padding: 0 25px;
+    }
+
+    #next-page .mobile-img {
+      position: absolute;
+      top: 195px;
+    }
+
+    #next-page .mobile-img img {
+      width: 100%;
+    }
+
+    #next-page .mobile-link {
+      position: absolute;
+      bottom: 87px;
+      width: 97vw;
+      text-align: center;
+      margin: auto;
+    }
+
+  }
+
 }

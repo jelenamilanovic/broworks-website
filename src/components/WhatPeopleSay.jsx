@@ -6,7 +6,7 @@ export default function WhatPeopleSay(props) {
     <div id="what-people-say">
       <h1 className="title extrabold">What people say</h1>
 
-      <div className="box">
+      <div className="box wow zoomIn">
         <img src={quote} />
         <div className="text">
           <p>

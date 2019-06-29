@@ -1,13 +1,18 @@
 header {
   height: 120px;
 
+  #mobile-menu,
+  #menu-icon {
+    display: none;
+  }
+
   &.yellow {
     background: $yellow;
   }
 
   .logo {
     position: relative;
-    top: -30px;
+    top: -37px;
     left: 100px;
     height: 200px;
   }
@@ -45,7 +50,7 @@ header {
 
   nav ul li h6 {
     font-weight: 500;
-    font-size: 23px;
+    font-size: 16px;
   }
 
   .hire-us {
@@ -62,10 +67,39 @@ header {
   }
 }
 
+@media screen and (max-width: 1367px) {
+  header {
+    .logo {
+      top: -32px;
+    }
+
+    nav ul li h6 {
+      font-size: 20px;
+    }
+
+    .intro .title {
+      width: 65%;
+      margin: auto;
+      margin-left: 26%;
+    }
+
+    .intro .title h1 {
+      font-size: 5em;
+    }
+
+    .intro .title p {
+      width: 610px;
+      font-size: 20px;
+    }
+  }
+
+}
+
 @media screen and (max-width: 510px) {
 
   header {
     width: 100vw;
+    position: relative;
 
     a {
       height: 100px;
@@ -77,6 +111,87 @@ header {
 
     .mobile-hidden {
       display: none;
+    }
+
+    #menu-icon {
+      display: block;
+      position: absolute;
+      top: 36px;
+      right: 26px;
+      cursor: pointer;
+    }
+
+    #menu-icon img {
+      height: 50px;
+    }
+
+    #mobile-menu {
+      display: block;
+      background: black;
+      width: 97vw;
+      height: 100vh;
+      color: #fff;
+      position: absolute;
+
+      .close {
+        text-align: right;
+        margin: 2em 3em;
+        cursor: pointer;
+      }
+
+      h3 {
+        font-size: 42px;
+        font-weight: bold;
+      }
+
+      .links {
+        text-align: center;
+        margin: 5em 9em;
+        /* margin-bottom: 9em; */
+        padding-top: 1em;
+      }
+
+      .mm-btn {
+        text-align: center;
+        margin-top: 8em;
+      }
+
+      .links li {
+        margin: 2em 0;
+      }
+
+      .links a {
+        color: $white;
+      }
+
+      .links a:hover {
+        color: $yellow;
+      }
+
+      .social-networks {
+        margin: 3em auto;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+          background: $white;
+          padding: 5px;
+          border-radius: 20%;
+        }
+
+        a:hover {
+          opacity: .7;
+        }
+
+        li {
+          margin: 0 40px;
+        }
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
     }
   }
 

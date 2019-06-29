@@ -1,12 +1,12 @@
 #home #best-works h1 {
-  margin-bottom: 1.7em;
+  margin-bottom: 140px;
   padding-left: 0px;
   padding-top: 1em;
 }
 
 #best-works {
   width: 1720px;
-  margin: 200px auto;
+  margin: 160px auto;
 
   h1 {
     font-size: 100px;
@@ -16,12 +16,13 @@
   }
 
   .work {
-    margin: 100px 0;
+    margin: 140px 0;
 
     h3 {
-      font-size: 45px;
+      font-size: 38px;
       font-weight: normal;
-      margin-bottom: 12px;
+      position: relative;
+      top: -30px;
     }
   }
 
@@ -35,7 +36,7 @@
     top: 110px;
     background: #fff;
     padding: 20px;
-    font-size: 23px;
+    font-size: 16px;
   }
 
   .w-card:after {
