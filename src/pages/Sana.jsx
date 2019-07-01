@@ -39,7 +39,7 @@ export default function Sana(props) {
           </div>
         </section>
 
-        <section>
+        <section className="last">
           <h3>Exploring the market</h3>
           <div className="w-text">
             <p>This is a pretty basic step of our process. We conduct competitive analysis, user research and target audience, after that we know exactly what to do. Without that, it is very hard to find the right solution and create something unique that will stand out, since you don’t know what to do better than your competition.</p>

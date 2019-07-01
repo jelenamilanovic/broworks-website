@@ -10,7 +10,7 @@ function Intro({ redirect }) {
 
   return (
     <div className="intro">
-
+      <p className="intromail">office@broworks.net</p>
       <div className="title wow fadeIn">
         <h1 className="extra-bold">We create <br /> unique projects <br /> that stand out</h1>
         <p>Our motivation is to help our clients grow and be the best in their branch by creating professional brand identity,
@@ -18,7 +18,7 @@ function Intro({ redirect }) {
 
         <div className="btns">
           <Link to="/works">
-            <button className="btn btn-blue">Our work</button>
+            <button className="btn btn-blue wow zoomInLeft">Our work</button>
           </Link>
 
           <a href="#" onClick={redirect}>

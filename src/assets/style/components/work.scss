@@ -1,36 +1,46 @@
 #single-work {
 
   .title {
-    padding-left: 345px;
+    padding-left: 350px;
     margin: 6em 0;
+    margin-top: 140px;
+    margin-bottom: 180px;
   }
 
   .title h1 {
     font-size: 100px;
     font-weight: 800;
-    margin-bottom: .5em;
+    margin-bottom: 25px;
   }
 
   .subtitle {
     font-size: 27px;
   }
 
+  .wide img {
+    width: 100%;
+  }
+
   .condensed {
     width: 1312px;
-    margin: 5em auto 4em;
+    margin: 2em auto;
     padding: 5em 0;
 
     section {
-      margin-bottom: 220px;
+      margin-bottom: 160px;
+    }
+
+    section.last {
+      margin-bottom: 0;
     }
 
     h3 {
-      font-size: 48px;
-      margin-bottom: 1.5em;
+      font-size: 40px;
+      margin-bottom: 1em;
     }
 
     p {
-      font-size: 27px;
+      font-size: 18px;
       margin-bottom: 1.5em;
     }
 
@@ -50,21 +60,21 @@
     margin: 0 0;
 
     h1.np-title {
-      font-size: 100px;
+      font-size: 80px;
       font-weight: 800;
       margin-top: -18px;
       margin-bottom: 80px;
     }
 
     h3.np-subtitle {
-      font-size: 40px;
+      font-size: 36px;
       font-weight: 600;
     }
 
     p {
       font-weight: normal;
-      font-size: 27px;
-      margin-bottom: 33%;
+      font-size: 23px;
+      margin-bottom: 52.2%;
     }
   }
 
@@ -97,6 +107,53 @@
     font-size: 27px;
     text-align: center;
     padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1279px) and (max-width: 1480px) {
+  #single-work {
+    .title {
+      margin-top: 120px;
+      margin-bottom: 160px;
+    }
+
+    .title h1 {
+      font-size: 75px;
+    }
+
+    .subtitle {
+      font-size: 23px;
+    }
+
+    .condensed {
+      width: 80%;
+    }
+
+    .condensed h3 {
+      font-size: 38px;
+    }
+
+    #next-page section:nth-of-type(1) {
+      flex: 1 0 45%
+    }
+
+    #next-page img {
+      width: 100%;
+    }
+
+    #next-page {
+      padding: 160px 100px;
+      padding-left: 160px;
+    }
+
+    #next-page h1.np-title {
+      font-size: 60px;
+    }
+
+    #next-page p {
+      font-size: 20px;
+      margin-bottom: 28.2%;
+    }
   }
 }
 

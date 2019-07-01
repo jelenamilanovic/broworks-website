@@ -39,7 +39,46 @@
     img {
       width: 24px;
       height: 24px;
+      opacity: .4;
     }
+  }
+
+  .intromail {
+    position: absolute;
+    left: 37px;
+    top: 247px;
+    transform: rotate(270deg);
+  }
+}
+
+@media screen and (min-width: 1279px) and (max-width: 1480px) {
+  .intro {
+    height: 84vh;
+  }
+
+  .intro .title {
+    width: 65%;
+    margin: auto;
+    margin-left: 26%;
+  }
+
+  .intro .title h1 {
+    font-size: 90px;
+  }
+
+  .intro .title p {
+    width: 610px;
+    font-size: 18px;
+  }
+
+  .intro .social-networks {
+    margin: -2em 0;
+    margin-right: 68px;
+  }
+
+  .social-networks img {
+    width: 21px;
+    height: 21px;
   }
 }
 

@@ -1,6 +1,6 @@
 #what-we-do {
   padding-top: 50px;
-  margin: 350px 0;
+  margin: 250px 0;
 
   .left,
   .right {
@@ -57,8 +57,36 @@
   }
 }
 
-@media screen and (max-width: 510px) {
 
+@media screen and (min-width: 1279px) and (max-width: 1480px) {
+  #what-we-do {
+    margin: 170px 0;
+    width: 100vw;
+
+    .left {
+      width: 50%;
+    }
+
+    .left img {
+      width: 100%;
+    }
+
+    .right h1 {
+      font-size: 75px;
+    }
+
+    .list {
+      margin-top: 150px;
+      margin-left: 30px;
+    }
+
+    .right .list h3 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
   #what-we-do {
     width: 100vw;
     padding: 0;

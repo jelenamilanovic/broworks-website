@@ -14,7 +14,7 @@
 
   .ctrl {
     height: 4em;
-    margin: 6em 0;
+    margin: 3em 0;
   }
 
   input[type='text'] {
@@ -59,6 +59,11 @@
     h4.yellow {
       background: $yellow;
     }
+
+    .btn-yellow {
+      position: relative;
+      top: 20px;
+    }
   }
 
   ::placeholder {
@@ -66,6 +71,24 @@
     font-size: 18px;
   }
 }
+
+@media screen and (min-width: 1279px) and (max-width: 1480px) {
+  #lets-work-together {
+    h1.title {
+      font-size: 75px;
+    }
+
+    .services {
+      width: 100%;
+    }
+
+    .services h4,
+    .service-ctrl-title {
+      font-size: 21px;
+    }
+  }
+}
+
 
 @media screen and (max-width: 510px) {
 

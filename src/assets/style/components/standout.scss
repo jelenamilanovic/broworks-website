@@ -38,6 +38,17 @@
   }
 }
 
+
+@media screen and (min-width: 1279px) and (max-width: 1480px) {
+  #standout {
+    height: 100vh;
+
+    .text h1 {
+      font-size: 75px !important;
+    }
+  }
+}
+
 @media screen and (max-width: 510px) {
 
   #standout {
