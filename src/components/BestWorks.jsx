@@ -5,6 +5,7 @@ import concept from '../assets/images/concept.png';
 import sana from '../assets/images/sana.png';
 import pomoc from '../assets/images/pomoc.png';
 import dimitrije from '../assets/images/dimitrije.png';
+import giovanni from '../assets/images/Giovanni/preview.png';
 
 export default function BestWork(props) {
   return (
@@ -12,6 +13,16 @@ export default function BestWork(props) {
       <h1 className="extrabold">Our best work</h1>
 
       <ul className="works">
+        <Link to="works/giovanni-pizza">
+          <li className="work wow slideInUp">
+            <h3>Giovanni Pizza</h3>
+            <img src={giovanni} alt="Giovanni Pizza" />
+            <div className="w-card">
+              <span>Mobile App</span>
+            </div>
+          </li>
+        </Link>
+
         <Link to="works/dimitrije-salon">
           <li className="work wow slideInUp">
             <h3>Dimitrije Salon</h3>

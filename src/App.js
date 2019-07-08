@@ -9,7 +9,7 @@ import ConceptStudio from './pages/ConceptStudio.jsx';
 import PomocSrpskojDeci from './pages/PomocSrpskojDeci.jsx';
 import Sana from './pages/Sana.jsx';
 import DimitrijeSalon from './pages/DimitrijeSalon.jsx';
-
+import GiovanniPizza from './pages/GiovanniPizza.jsx';
 import Header from './components/Header.jsx';
 import LetsWorkTogether from './components/LetsWorkTogether.jsx';
 import Footer from './components/Footer.jsx';
@@ -40,6 +40,8 @@ export default class App extends Component {
           <Route path="/works/pomoc-srpskoj-deci" component={PomocSrpskojDeci} />
           <Route path="/works/sana" component={Sana} />
           <Route path="/works/dimitrije-salon" component={DimitrijeSalon} />
+          <Route path="/works/giovanni-pizza" component={GiovanniPizza} />
+
 
           <Route path="/agency" component={Agency} />
         </Switch>

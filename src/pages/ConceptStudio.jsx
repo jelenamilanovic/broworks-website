@@ -5,14 +5,14 @@ import img3 from '../assets/images/ConceptStudio/img 3.png';
 import img4 from '../assets/images/ConceptStudio/img 4.png';
 import NextPage from '../components/NewPage.jsx';
 
-import dimitrijeSalonPreview from '../assets/images/Dimitrije Salon/Dimitrije salon Preview img.png';
+import giovanniPreview from '../assets/images/Giovanni/previewsm.png';
 
 export default function ConceptStudio(props) {
   let nextPage = {
-    name: 'Dimitrije Salon',
-    work: 'Brand Identity design',
-    preview: dimitrijeSalonPreview,
-    link: '/works/dimitrije-salon'
+    name: 'Giovanni Pizza',
+    work: 'Mobile App',
+    preview: giovanniPreview,
+    link: '/works/giovanni-pizza'
   }
   return (
     <div id="single-work">
